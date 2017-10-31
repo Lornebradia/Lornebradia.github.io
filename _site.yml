@@ -2,15 +2,14 @@ name: "lorenzo-site"
 output_dir: "."
 navbar: 
   title: "Lorenzo's site"
+  href: index.html
   left: 
-  - text: "Home"
-    href: index.html
   - text: "Projects"
     href: projects.html
   - text: "Blog"
     href: http://plotshaveilaid.netlify.com/
-  - text: "About Me"
-    href: about.html
+  - text: "CV"
+    href: ""
   - text: "Contact me"
     menu:
     - text: " LinkedIn"
