@@ -1,0 +1,9 @@
+name: "lorenzo-site"
+output_dir: "."
+navbar: 
+  title: "Lorenzo's site"
+  left: 
+  - text: "Home"
+    href: index.html
+  - text: "About Me"
+    href: about.html
