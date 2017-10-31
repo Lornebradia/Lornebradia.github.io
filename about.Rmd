@@ -2,4 +2,8 @@
 title: About Me
 ---
 
-Me me me and more me
+
+Hi, I'm Lorenzo!
+
+
+![](lor.png)
