@@ -25,7 +25,7 @@ navbar:
       href: mailto:lbraschi@gmail.com
 output: 
   html_document: 
-    theme: united
+    theme: yeti
     highlight: espresso
 
       
