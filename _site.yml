@@ -9,7 +9,7 @@ navbar:
   - text: "Blog"
     href: http://plotshaveilaid.netlify.com/
   - text: "CV"
-    href: ""
+    href: CV.html
   - text: "Contact me"
     menu:
     - text: " LinkedIn"
