@@ -1,0 +1,31 @@
+name: "lorenzo-site"
+output_dir: "."
+navbar: 
+  title: "Lorenzo's site"
+  href: index.html
+  left: 
+  - text: "Projects"
+    href: projects.html
+  - text: "Blog"
+    href: http://plotshaveilaid.netlify.com/
+  - text: "CV"
+    href: CV.html
+  - text: "Contact me"
+    menu:
+    - text: " LinkedIn"
+      icon: fa-linkedin
+      href: https://www.linkedin.com/in/lorenzobraschi/
+    - text: "----------------"
+    - text: " GitHub"  
+      icon: fa-github
+      href: https://github.com/Lornebradia
+    - text: "----------------"
+    - text: " email"
+      icon: fa-envelope
+      href: mailto:lbraschi@gmail.com
+output: 
+  html_document: 
+    theme: yeti
+    highlight: espresso
+
+      

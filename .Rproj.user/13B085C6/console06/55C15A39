@@ -1,0 +1,36 @@
+ls
+CV.Rmd			README.html		about.Rmd		index.html		projects.html
+CV.html			README.md		about.html		lor.png			site_libs
+Personal_site.Rproj	_site.yml		index.Rmd		projects.Rmd
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ ls -A
+.DS_Store		.git			CV.html			_site.yml		index.html		site_libs
+.RData			.gitignore		Personal_site.Rproj	about.Rmd		lor.png
+.Rhistory		.here			README.html		about.html		projects.Rmd
+.Rproj.user		CV.Rmd			README.md		index.Rmd		projects.html
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ ;s[K[Kman ls
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ ls -1
+CV.Rmd
+CV.html
+Personal_site.Rproj
+README.html
+README.md
+_site.yml
+about.Rmd
+about.html
+index.Rmd
+index.html
+lor.png
+projects.Rmd
+projects.html
+site_libs
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ man la[Ks
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ ls -i
+1228656 CV.Rmd			6803276 README.md		1128321 index.Rmd		1131442 projects.html
+1228846 CV.html			1128257 _site.yml		1128524 index.html		1128378 site_libs
+1128041 Personal_site.Rproj	1128341 about.Rmd		1129997 lor.png
+1128599 README.html		1128448 about.html		1131191 projects.Rmd
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ ls -c
+CV.Rmd			README.html		about.Rmd		index.html		projects.html
+CV.html			README.md		about.html		lor.png			site_libs
+Personal_site.Rproj	_site.yml		index.Rmd		projects.Rmd
+]0;~/documents/personal_sitebraschil-CVH03M:personal_site braschil$ man ls
