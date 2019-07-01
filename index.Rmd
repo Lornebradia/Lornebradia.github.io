@@ -1,7 +1,7 @@
 ---
 title: "Lorenzo's Site"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Lorenzo Braschi's personal website
 site: radix::radix_website
 ---
 
@@ -12,4 +12,3 @@ knitr::opts_chunk$set(echo = FALSE)
 # https://rstudio.github.io/radix/website.html
 
 ```
-
