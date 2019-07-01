@@ -1,0 +1,110 @@
+---
+name: Lorenzo Braschi
+position: "IT Expert (Data Science)"
+address: "ul. Targowa 78/24"
+phone: +48 537 159 236
+email: "lbraschi@gmail.com"
+github: lornebradia
+linkedin: lorenzobraschi
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: '4682B4'
+output: 
+  vitae::moderncv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(glue)
+```
+
+
+# Experience
+
+```{r}
+tribble(
+  ~role, ~company, ~loc, ~start.year, ~end.year, ~details, 
+  "IT Expert, DIS", "Roche Global IT Solution Centre", "Warsaw", 2017, "present", "Forecasting for Business Planning in Diagnostics, leading a small group of data scientists to create a forecasting application for business planning simplification",
+  "Consultant, Large jewelry retailer", "Accenture", "Warsaw & Copenhagen", 2016, 2017, "Upgrade of the customers and stores database. ", 
+  "Consultant, Large technology retailer", "Accenture", "Warsaw & Cork", 2015, 2016, "Helped identify major bottlenecks in the delivery process from production to physical stores using sales data from all EMEIA countries. ", 
+  "Clinical Trials Analyst", "Sermes CRO", "Madrid", 2014, 2015, "Design, analysis and reporting of clinical test trials.", 
+  "Assistant Professor", "Universidad Alfonso X el Sabio", "Villanueva de la Cañada", 2011, 2015, "Lecturer of Statistics and Methodology for the Health Sciences.",
+  "Lab Technician", "Universidad Autonoma de Madrid", "Madrid", 2009, 2010, "Design of experiments and data analysis for the Language Learning Babylab."
+  ) %>% 
+  detailed_entries(role, glue("{start.year} - {end.year}"), company, loc, details)
+```
+
+# Skills
+
+## Technical Skills
+
+```{r}
+tribble(
+  ~area, ~skill, ~since, ~details, ~moardetails,
+  "Data Science", "R Programming", 2008, "broad experience with a large variety of packages, including package creation", "tidyverse, forecasting with forecast, reports with rmarkdown, plots with ggplot2, functional programming with purrr",
+  "Data Science", "Visualisation with Shiny", 2014,  "developing Shiny apps for a variety of users from finance to retail", "shinydashboards, flexdashboards, htmlwidgets, shinyjs, shinycssloaders",
+  "Data Science", "Statistical Analysis", 2005, "wide range of machine learning tools, regression, classification, clustering, prediction, including deep learning modelling.", NA_character_, 
+  "Dev tools", "Git", 2015, "proficient git user", "GitHub, Bitbucket", 
+  "Dev tools", "Docker", 2018, "working knowledge of Docker for development and deployment", NA_character_
+) %>% 
+  detailed_entries(what = skill, when = glue("since {since}"), where = details, with = NA, why = moardetails)
+```
+
+\newpage 
+
+## Soft skills
+
+```{r}
+tribble(
+  ~topic, ~details,
+  "Team player", "Highly team focused, interested in making the team mature and enable it to tackle larger challenges. Focus on teaching and spreading knowledge.", 
+  "Leadership", "Lead by example, give inspiration and suggest guidelines for the general development of the team", 
+  "Business consulting", "Bridge the expertise gap between the business side and the data science team."
+) %>% 
+  brief_entries(what = details, when = topic, with = NA)
+```
+
+
+
+# Education
+
+```{r}
+tribble(
+  ~degree, ~uni, ~loc, ~start.year, ~end.year, ~details, 
+  "Graduate in Psychology", "Universidad Complutense de Madrid", "Madrid", 1996, 2004, "Graduate degree in Psychology and Behavioural Sciences", 
+  "Master degree in Ethology and Animal Behaviour", "Universidad Complutense de Madrid", "Madrid", 2004, 2008, "Evolutionary theory applied to Human Behaviour",
+  "Master degree in Methology for the Behavioural Sciences", "Universidad Nacional de Educacion a Distancia", "Madrid", 2008, 2011, "Master thesis in sequential sampling and meta-analysis"
+) %>% 
+  detailed_entries(degree, glue("{start.year} - {end.year}"), uni, loc, details)
+```
+
+
+# Other education
+
+```{r}
+tribble(
+  ~certification, ~provider, ~date,
+  "Measuring Causal Effects in the Social Sciences", "Coursera", 2016, 
+  "Machine Learning", "Coursera", 2016, 
+  "SAS Base Programmer", "SAS Institute", 2016, 
+  "Introduction to Artificial Intelligence", "Udacity", 2010
+) %>% 
+  arrange(date) %>% 
+  brief_entries(certification, date, provider)
+```
+
+# Languages
+
+```{r}
+tribble(
+  ~language, ~level, 
+  "Spanish", "Native", 
+  "Italian", "Native", 
+  "English", "Fluent speaker, writer, business competence", 
+  "Polish", "Basic competence"
+) %>% 
+  brief_entries(what = level, when = language, with = NA)
+```
+
+
