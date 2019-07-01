@@ -10,5 +10,5 @@ navbar:
     - text: "About"
       href: about.html
     - text: "CV"
-      href: CV.html
+      href: CV/CV.pdf
 output: radix::radix_article
