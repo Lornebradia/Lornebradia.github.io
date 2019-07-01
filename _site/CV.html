@@ -19,26 +19,42 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
+<<<<<<< HEAD
+  <title>Lorenzo's Site: Summary</title>
+=======
   <title>Lorenzo's Site: CV</title>
+>>>>>>> master
   
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<<<<<<< HEAD
+  <meta property="og:title" content="Lorenzo&#39;s Site: Summary"/>
+=======
   <meta property="og:title" content="Lorenzo&#39;s Site: CV"/>
+>>>>>>> master
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Lorenzo&#39;s Site"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
+<<<<<<< HEAD
+  <meta property="twitter:title" content="Lorenzo&#39;s Site: Summary"/>
+=======
   <meta property="twitter:title" content="Lorenzo&#39;s Site: CV"/>
+>>>>>>> master
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
+<<<<<<< HEAD
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Summary"]}]}
+=======
   {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["CV"]}]}
+>>>>>>> master
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -251,7 +267,11 @@
     display: block;
   }
   
+<<<<<<< HEAD
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+=======
   .nav-dropdown-content a {
+>>>>>>> master
     color: black;
     padding: 6px 24px;
     text-decoration: none;
@@ -259,6 +279,19 @@
     text-align: left;
   }
   
+<<<<<<< HEAD
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+  
+=======
+>>>>>>> master
   .nav-dropdown:hover .nav-dropbtn {
     color: white;
   }
@@ -366,9 +399,14 @@
   
   </style>
   
+<<<<<<< HEAD
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+=======
   <link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet"/>
   <script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
   <script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+>>>>>>> master
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
@@ -383,6 +421,13 @@
     width: 100%;
   }
   
+<<<<<<< HEAD
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+  
+=======
+>>>>>>> master
   .pandoc-table th:not([align]) {
     text-align: left;
   }
@@ -399,6 +444,13 @@
     padding-right: 16px;
   }
   
+<<<<<<< HEAD
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+  
+=======
+>>>>>>> master
   .shaded {
     background: rgb(247, 247, 247);
     padding-top: 20px;
@@ -506,6 +558,13 @@
   /* Tweak code blocks (note that this CSS is repeated above in an injection
      into the d-code shadow dom) */
   
+<<<<<<< HEAD
+  d-code {
+    overflow-x: auto !important;
+  }
+  
+=======
+>>>>>>> master
   pre.d-code code.d-code {
     padding-left: 10px;
     font-size: 12px;
@@ -536,6 +595,14 @@
   }
   
   @media(min-width: 768px) {
+<<<<<<< HEAD
+  
+  d-code {
+    overflow-x: visible !important;
+  }
+  
+=======
+>>>>>>> master
   pre.d-code code.d-code  {
       padding-left: 18px;
       font-size: 14px;
@@ -918,9 +985,15 @@
       var fn = $('#' + id);
       var fn_p = $('#' + id + '>p');
       fn_p.find('.footnote-back').remove();
+<<<<<<< HEAD
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+=======
       var text = fn_p.text();
       var dtfn = $('<d-footnote></d-footnote>');
       dtfn.text(text);
+>>>>>>> master
       $(this).replaceWith(dtfn);
     });
     // remove footnotes
@@ -946,7 +1019,14 @@
       var clz = "";
       var language = pre.attr('class');
       if (language) {
+<<<<<<< HEAD
+        // map unknown languages to "clike" (without this they just dissapear)
+        if ($.inArray(language, ["bash", "clike", "css", "go", "html",
+                                 "javascript", "js", "julia", "lua", "markdown",
+                                 "markup", "mathml", "python", "svg", "xml"]) == -1)
+=======
         if ($.inArray(language, ["r", "cpp", "c", "java"]) != -1)
+>>>>>>> master
           language = "clike";
         language = ' language="' + language + '"';
         var dt_code = $('<d-code block' + language + clz + '></d-code>');
@@ -1161,9 +1241,25 @@
     // prevent underline for linked images
     $('a > img').parent().css({'border-bottom' : 'none'});
   
+<<<<<<< HEAD
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+  
+      }
+=======
     // mark figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       $(this).find('img, .html-widget').css('width', '100%');
+>>>>>>> master
     });
   
     // auto-append index.html to post-preview links in file: protocol
@@ -1175,7 +1271,11 @@
   
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
+<<<<<<< HEAD
+      $('.radix-site-header a[href]').each(function(i,val) {
+=======
       $('.radix-site-header a').each(function(i,val) {
+>>>>>>> master
         $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
@@ -1184,6 +1284,11 @@
     $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
     $('.kable-table').children('table').addClass('pandoc-table');
   
+<<<<<<< HEAD
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+=======
+>>>>>>> master
   
     // initialize posts list
     if (window.init_posts_list)
@@ -1195,6 +1300,10 @@
       $('#disqus_thread').toggleClass('hidden');
       if (!$('#disqus_thread').hasClass('hidden')) {
         var offset = $(this).offset();
+<<<<<<< HEAD
+        $(window).resize();
+=======
+>>>>>>> master
         $('html, body').animate({
           scrollTop: offset.top - 35
         });
@@ -1227,7 +1336,11 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
+<<<<<<< HEAD
+{"title":"Summary","authors":[]}
+=======
 {"title":"CV","authors":[]}
+>>>>>>> master
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1240,6 +1353,9 @@
 <div class="nav-right">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
+<<<<<<< HEAD
+<a href="CV/CV.pdf">CV</a>
+=======
 <a href="CV.html">CV</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
@@ -1261,6 +1377,7 @@ Contact me
 </a>
 </div>
 </div>
+>>>>>>> master
 <a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
 </div>
 </nav>
@@ -1270,12 +1387,22 @@ Contact me
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
+<<<<<<< HEAD
+<h1>Summary</h1>
+=======
 <h1>CV</h1>
+>>>>>>> master
 
 </div>
 
 
 <div class="d-article">
+<<<<<<< HEAD
+<p>I have ten years of analytical experience in making data understandable to the non-expert. My main areas of expertise lie in the application of advanced analytical techniques to extract information, and in the deployment of the visualization tools necessary for understanding the data.<br />
+I am proficient in a wide variety of areas, from statistical modelling to data visualization, web mining, database querying, and others.<br />
+I am an advanced R programmer and an evangelist of reproducible research methodologies.</p>
+<h2 id="experience">Experience</h2>
+=======
 <p><br/></p>
 <h2 id="lorenzo-braschi">Lorenzo Braschi</h2>
 <p><strong>Warsaw, Poland</strong><br />
@@ -1290,6 +1417,7 @@ I am an advanced R programmer and an evangelist of reproducible research methodo
 <p><br/></p>
 <h2 id="experience">Experience</h2>
 <p><br/></p>
+>>>>>>> master
 <h5 id="it-expert-data-science-at-roche"><strong>IT Expert (Data Science) at Roche</strong></h5>
 <p><em>2017 - Current</em></p>
 <h5 id="statistical-consultant-at-accenture"><strong>Statistical Consultant at Accenture</strong></h5>

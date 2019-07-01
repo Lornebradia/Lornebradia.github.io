@@ -1,9 +1,10 @@
 ---
-title: About Me
+title: "About this site"
+description: |
+  Some additional details about the website
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
-Hi, I'm Lorenzo!
-
-
-![](lor.png)
