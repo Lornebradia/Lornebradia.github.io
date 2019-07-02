@@ -2,7 +2,7 @@ name: "Personal_site"
 title: "Lorenzo's Site"
 description: |
   Lorenzo's Site
-output_dir: "_site"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
