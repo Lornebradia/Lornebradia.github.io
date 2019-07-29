@@ -1,8 +1,0 @@
-R CMD [K[K[K[K[K[KR CMD BATCH "ls()"
-]0;~/Documents/Personal_sitebraschil-CVH03M:Personal_site braschil$ [Kbraschil-CVH03M:Personal_site braschil$ [Kbraschil-CVH03M:Personal_site braschil$ [Kbraschil-CVH03M:Personal_site braschil$ ls -A
-.DS_Store		.git			CV.html			_site.yml		index.html		site_libs
-.RData			.gitignore		Personal_site.Rproj	about.Rmd		lor.png
-.Rhistory		.here			README.html		about.html		projects.Rmd
-.Rproj.user		CV.Rmd			README.md		index.Rmd		projects.html
-]0;~/Documents/Personal_sitebraschil-CVH03M:Personal_site braschil$ vi .DS_Store
-]0;~/Documents/Personal_sitebraschil-CVH03M:Personal_site braschil$ 

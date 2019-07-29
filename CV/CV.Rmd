@@ -9,8 +9,9 @@ linkedin: lorenzobraschi
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: '4682B4'
 output: 
-  vitae::moderncv
+  vitae::awesomecv
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -45,13 +46,13 @@ tribble(
   "Data Science", "R Programming", 2008, "broad experience with a large variety of packages, including package creation", "tidyverse, forecasting with forecast, reports with rmarkdown, plots with ggplot2, functional programming with purrr",
   "Data Science", "Visualisation with Shiny", 2014,  "developing Shiny apps for a variety of users from finance to retail", "shinydashboards, flexdashboards, htmlwidgets, shinyjs, shinycssloaders",
   "Data Science", "Statistical Analysis", 2005, "wide range of machine learning tools, regression, classification, clustering, prediction, including deep learning modelling.", NA_character_, 
+  "Business Intelligence", "Tableau",  2015, "competent Tableau user", NA_character_,
   "Dev tools", "Git", 2015, "proficient git user", "GitHub, Bitbucket", 
   "Dev tools", "Docker", 2018, "working knowledge of Docker for development and deployment", NA_character_
 ) %>% 
   detailed_entries(what = skill, when = glue("since {since}"), where = details, with = NA, why = moardetails)
 ```
 
-\newpage 
 
 ## Soft skills
 
