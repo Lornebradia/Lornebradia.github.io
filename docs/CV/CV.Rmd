@@ -1,16 +1,17 @@
 ---
-name: Lorenzo Braschi
+name: "Lorenzo Braschi"
 position: "IT Expert (Data Science)"
 address: "ul. Targowa 78/24"
 phone: +48 537 159 236
 email: "lbraschi@gmail.com"
-github: lornebradia
-linkedin: lorenzobraschi
+github: "lornebradia"
+linkedin: "lorenzobraschi"
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: '4682B4'
 output: 
-  vitae::moderncv
+  vitae::twentyseconds
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
@@ -25,7 +26,7 @@ library(glue)
 ```{r}
 tribble(
   ~role, ~company, ~loc, ~start.year, ~end.year, ~details, 
-  "IT Expert, DIS", "Roche Global IT Solution Centre", "Warsaw", 2017, "present", "Forecasting for Business Planning in Diagnostics, leading a small group of data scientists to create a forecasting application for business planning simplification",
+  "IT Expert, Data Science", "Roche Global IT Solution Centre", "Warsaw", 2017, "present", "Tech lead for small teams (2-4 developers) developing solutions for different business areas: finance forecasting, facility management, site optimization, scientific research.",
   "Consultant, Large jewelry retailer", "Accenture", "Warsaw & Copenhagen", 2016, 2017, "Upgrade of the customers and stores database. ", 
   "Consultant, Large technology retailer", "Accenture", "Warsaw & Cork", 2015, 2016, "Helped identify major bottlenecks in the delivery process from production to physical stores using sales data from all EMEIA countries. ", 
   "Clinical Trials Analyst", "Sermes CRO", "Madrid", 2014, 2015, "Design, analysis and reporting of clinical test trials.", 
@@ -45,27 +46,25 @@ tribble(
   "Data Science", "R Programming", 2008, "broad experience with a large variety of packages, including package creation", "tidyverse, forecasting with forecast, reports with rmarkdown, plots with ggplot2, functional programming with purrr",
   "Data Science", "Visualisation with Shiny", 2014,  "developing Shiny apps for a variety of users from finance to retail", "shinydashboards, flexdashboards, htmlwidgets, shinyjs, shinycssloaders",
   "Data Science", "Statistical Analysis", 2005, "wide range of machine learning tools, regression, classification, clustering, prediction, including deep learning modelling.", NA_character_, 
-  "Dev tools", "Git", 2015, "proficient git user", "GitHub, Bitbucket", 
+  "Business Intelligence", "Tableau",  2015, "competent Tableau user", NA_character_,
+  "Dev tools", "Git", 2015, "proficient git user and evangelist", "GitHub, Bitbucket, GitLab.", 
   "Dev tools", "Docker", 2018, "working knowledge of Docker for development and deployment", NA_character_
 ) %>% 
-  detailed_entries(what = skill, when = glue("since {since}"), where = details, with = NA, why = moardetails)
+  detailed_entries(what = skill, when = glue("since {since}"), where = NA, with = NA, why = details)
 ```
 
-\newpage 
 
 ## Soft skills
 
 ```{r}
 tribble(
   ~topic, ~details,
-  "Team player", "Highly team focused, interested in making the team mature and enable it to tackle larger challenges. Focus on teaching and spreading knowledge.", 
+  "Team player", "Very team focused, interested in making the team mature and enable it to tackle larger challenges. Focus on teaching and spreading knowledge.", 
   "Leadership", "Lead by example, give inspiration and suggest guidelines for the general development of the team", 
   "Business consulting", "Bridge the expertise gap between the business side and the data science team."
 ) %>% 
-  brief_entries(what = details, when = topic, with = NA)
+  detailed_entries(what = topic, why = details)
 ```
-
-
 
 # Education
 
